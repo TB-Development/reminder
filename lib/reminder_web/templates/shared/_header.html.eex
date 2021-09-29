@@ -1,0 +1,26 @@
+<section id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1><a href="/" id="logo">Reminder</a></h1>
+                <nav id="nav">
+                    <a href="/">Nothing</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-12-medium">
+                    <p>Upcoming Features</p>
+                    <ul>
+                        <li>
+                            None
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
