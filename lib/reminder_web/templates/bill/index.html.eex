@@ -3,16 +3,6 @@
 <script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" class="init"> </script>
 
-<h1>Listing Bills</h1>
-<script>
-
-    $(document).ready(function() {
-        $('#bills-table').DataTable({
-            searching: false,
-            paging: false
-        });
-    } );
-</script>
 <table id="bills-table" class="display">
   <thead>
     <tr>
@@ -29,19 +19,18 @@
           <td><%= link bill.name, to: Routes.bill_path(@conn, :edit, bill) %></td>
           <td><%= bill.description %></td>
           <td><%= bill.price %></td>
-          <!-- Will need a way to determine due date -->
           <td> due date? </td>
-          <td>
-              <%=
-                link to: Routes.bill_path(@conn, :delete, bill), method: :delete, data: [confirm: "Are you sure?"] do
-                    img_tag("https://img.icons8.com/material-outlined/24/000000/delete-sign.png")
-                end
-               %>
-          </td>
       </tr>
     <% end %>
+
   </tbody>
 </table>
+<div class="table-create">
+    <%=
+     link to: Routes.bill_path(@conn, :new) do
+         img_tag("https://img.icons8.com/ios-filled/50/000000/add--v1.png")
+     end
+    %>
+</div>
 
-<span><%= link "New Bill", to: Routes.bill_path(@conn, :new) %></span>
 

@@ -1,5 +1,4 @@
 <h1>Edit Bill</h1>
-
 <%= render "form.html", Map.put(assigns, :action, Routes.bill_path(@conn, :update, @bill)) %>
-
+<span><%= link "Delete", to: Routes.bill_path(@conn, :delete, @bill), method: :delete, data: [confirm: "Are you sure?"], class: "button-large" %></span>
 <span><%= link "Back", to: Routes.bill_path(@conn, :index) %></span>

@@ -13,13 +13,6 @@ import "../css/app.scss"
 //     import socket from "./socket"
 //
 
-import $ from "jquery"
-global.$ = global.jQuery = $;
-
 import "phoenix_html"
-import "../static/js/breakpoints.min"
-import "../static/js/browser.min"
-import "../static/js/halcyonic-main"
-import "../static/js/jquery.min"
+import "./jquery.min"
 import "../static/js/main"
-import "../static/js/util"

@@ -6,8 +6,7 @@ defmodule ReminderWeb.BillView do
       "Name",
       "Description",
       "Price",
-      "Due Date",
-      ""
+      "Due Date"
     ]
   end
 end

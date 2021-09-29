@@ -9,18 +9,4 @@
             </div>
         </div>
     </div>
-    <div id="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-12-medium">
-                    <p>Upcoming Features</p>
-                    <ul>
-                        <li>
-                            None
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
